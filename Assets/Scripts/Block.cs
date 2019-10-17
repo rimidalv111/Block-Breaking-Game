@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonColorChanger : MonoBehaviour
+public class Block : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,5 +14,10 @@ public class ButtonColorChanger : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log(gameObject.name + " has colided with " + collision.gameObject.name);
     }
 }
