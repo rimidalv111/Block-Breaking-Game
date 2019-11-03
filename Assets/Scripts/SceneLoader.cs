@@ -17,9 +17,9 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadWinScene()
     {
-        //SceneManager.LoadScene(2);
-        int smanager = SceneManager.GetSceneAt(2).buildIndex;
-        SceneManager.LoadScene(smanager);
+        SceneManager.LoadScene(2);
+        //int smanager = SceneManager.GetSceneAt(2).buildIndex;
+        //SceneManager.LoadScene(smanager);
     }
 
     public void QuitGame()

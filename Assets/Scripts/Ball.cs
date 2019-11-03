@@ -5,22 +5,47 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     [SerializeField] private float InitialBallVelocity = 10f;
+    [SerializeField] AudioClip wallBounceSound;
+    [SerializeField] AudioClip paddleBounceSound;
+    public AudioSource audio;
 
+    private GameObject gamePaddle;
+    private Vector2 GamePaddlePosition;
+    private Vector2 InitalBallPosition;
+
+    private bool isGameStarted = false;
     // Start is called before the first frame update
     void Start()
     {
-  
+
+        gamePaddle = GameObject.FindGameObjectWithTag("paddle"); //initiate paddle
+
+        //grab audio sources
+        audio = GetComponent<AudioSource>();
     }
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Mouse0))
+        if(!isGameStarted) //if game hasnt started yet keep the ball on the paddle
         {
-            Debug.Log("Pressed primary button.");
+            LockedPaddle();
+        }
+        if (Input.GetKey(KeyCode.Mouse0) && !isGameStarted) //start game when button is down
+        {
+            isGameStarted = true; //we start the game when we launch the ball up
+            Debug.Log("Game started, launch ball up!");
             LaunchBall(InitialBallVelocity);
         }
     }
 
+    //method to lock the ball onto the paddle until user starts the game by left clicking.
+    private void LockedPaddle()
+    {
+        GamePaddlePosition = gamePaddle.transform.position; //get the paddle cords
+        InitalBallPosition = transform.position; //get the initial ball position
+        Vector2 positionOfPaddle = new Vector2(GamePaddlePosition.x, GamePaddlePosition.y + 0.5f); //set the ball in middle of paddle and above the paddle (not in the center of the y axis)
+        transform.position = positionOfPaddle;
+    }
     //method to launch the onject with a given (passed) velocity v
     private void LaunchBall(float v)
     {
@@ -32,6 +57,19 @@ public class Ball : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(gameObject.name + " has colided with " + collision.gameObject.name);
+        if (isGameStarted) //we only want to play the sounds only when game is running
+        {
+            // when ball collides with ceiling, right wall, left wall, make sound
+            if (collision.gameObject.name == "Ceiling" || collision.gameObject.name == "Right Wall" || collision.gameObject.name == "Left Wall")
+            {
+                audio.PlayOneShot(wallBounceSound, 0.7F);
+            }
+            //when ball collides with paddle make sound
+            if (collision.gameObject.name == "Paddle")
+            {
+                audio.PlayOneShot(paddleBounceSound, 0.7F);
+            }
+            Debug.Log(gameObject.name + " has colided with " + collision.gameObject.name);
+        }
     }
 }

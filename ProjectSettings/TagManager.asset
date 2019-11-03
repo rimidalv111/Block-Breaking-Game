@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - StartButton
+  - ball
+  - paddle
   layers:
   - Default
   - TransparentFX

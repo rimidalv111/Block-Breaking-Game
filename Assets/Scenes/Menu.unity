@@ -149,7 +149,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 219, y: 256}
+  m_AnchoredPosition: {x: 356, y: 256}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &309172585
@@ -245,11 +245,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 309172583}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d51c15a7157c7514c8039ff8e59c1012, type: 3}
+  m_Script: {fileID: 11500000, guid: 030122d520a09d9459ad6a6a87e288bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startPos: {x: 0, y: 0}
 --- !u!1 &380267627
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,8 +285,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 411, y: 364.8}
-  m_SizeDelta: {x: 622.5, y: 120.3}
+  m_AnchoredPosition: {x: 353, y: 364.8}
+  m_SizeDelta: {x: 765.3, y: 120.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &380267629
 MonoBehaviour:
@@ -306,7 +307,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5dd49b3eacc540408c98eee0de38e0f1, type: 3}
+    m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
     m_FontSize: 74
     m_FontStyle: 0
     m_BestFit: 0
@@ -1044,7 +1045,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 219, y: 164}
+  m_AnchoredPosition: {x: 356, y: 164}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1664383194
@@ -1140,11 +1141,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664383192}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d51c15a7157c7514c8039ff8e59c1012, type: 3}
+  m_Script: {fileID: 11500000, guid: 030122d520a09d9459ad6a6a87e288bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startPos: {x: 0, y: 0}
 --- !u!1 &1772571053
 GameObject:
   m_ObjectHideFlags: 0

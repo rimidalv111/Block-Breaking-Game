@@ -4,16 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class LoadMenu : MonoBehaviour
+public class MenuLoad : MonoBehaviour
 {
-    Vector2 startPos; //grab initial position
-    bool finished = false; //when finished update us
+    public Vector2 startPos; //grab initial position
+    private bool finished = false; //when finished update us
 
     GameObject startButton;
 
     // Start is called before the first frame update
     void Start()
     {
+
         startPos = transform.position; //grab initial
         startButton = GameObject.FindGameObjectWithTag("StartButton");
     }
