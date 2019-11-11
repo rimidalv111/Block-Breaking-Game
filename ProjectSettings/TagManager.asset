@@ -7,6 +7,9 @@ TagManager:
   - StartButton
   - ball
   - paddle
+  - gameSession
+  - scoreText
+  - electricBlock
   layers:
   - Default
   - TransparentFX

@@ -13,15 +13,19 @@ public class SceneLoader : MonoBehaviour
     public void LoadStartScene()
     {
         SceneManager.LoadScene(0);
+        GameObject.Destroy(GameObject.Find("GameSession")); //destroy our DontDestroyOnLoad
+        GameObject.Destroy(GameObject.Find("LevelHandler")); //destroy our DontDestroyOnLoad
     }
 
     public void LoadWinScene()
     {
         SceneManager.LoadScene(2);
-        //int smanager = SceneManager.GetSceneAt(2).buildIndex;
-        //SceneManager.LoadScene(smanager);
     }
 
+    public void LoadLevelScene(int levelid)
+    {
+        SceneManager.LoadScene(levelid);
+    }
     public void QuitGame()
     {
         Application.Quit();

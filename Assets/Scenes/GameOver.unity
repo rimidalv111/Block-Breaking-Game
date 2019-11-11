@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 131035583}
   m_Layer: 5
   m_Name: Text
-  m_TagString: Untagged
+  m_TagString: scoreText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,7 +180,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "GAME OVER !  \nYour Score:"
+  m_Text: GAME OVER !
 --- !u!222 &131035584
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1021,6 +1021,80 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1317674039
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6271368704371623707, guid: 15811112bd684ca45a8ad21f13b171ca,
+        type: 3}
+      propertyPath: m_Name
+      value: GameSession
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271368704371623706, guid: 15811112bd684ca45a8ad21f13b171ca,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271368704371623706, guid: 15811112bd684ca45a8ad21f13b171ca,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271368704371623706, guid: 15811112bd684ca45a8ad21f13b171ca,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271368704371623706, guid: 15811112bd684ca45a8ad21f13b171ca,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271368704371623706, guid: 15811112bd684ca45a8ad21f13b171ca,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271368704371623706, guid: 15811112bd684ca45a8ad21f13b171ca,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271368704371623706, guid: 15811112bd684ca45a8ad21f13b171ca,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271368704371623706, guid: 15811112bd684ca45a8ad21f13b171ca,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271368704371623706, guid: 15811112bd684ca45a8ad21f13b171ca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271368704371623706, guid: 15811112bd684ca45a8ad21f13b171ca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271368704371623706, guid: 15811112bd684ca45a8ad21f13b171ca,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271368704371623704, guid: 15811112bd684ca45a8ad21f13b171ca,
+        type: 3}
+      propertyPath: sceneLoader
+      value: 
+      objectReference: {fileID: 524245789}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 15811112bd684ca45a8ad21f13b171ca, type: 3}
 --- !u!1 &1466553471
 GameObject:
   m_ObjectHideFlags: 0
